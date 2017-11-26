@@ -126,13 +126,21 @@
             var messageType = (['sent', 'received'])[Math.round(Math.random())];
 
             // Provides the avatar and name for the received message
-            var name = ('Kyoshiro');
+            var name2 = (['Talia','Clarissa','Judymae','Christy'])[Math.round(Math.random())];
         
             var avatar;
          
             if(messageType === 'received') {
-               name = 'Talia';
+               name = name2;
                avatar = 'lib/framework7/img/thalia.png';
+            if(name === 'Judymae'){
+                avatar = 'lib/framework7/img/judy.png';
+            }
+            if (name === 'Clarissa') {
+                avatar = 'lib/framework7/img/clariss.png';
+            }
+
+
         }
 
            if(messageType === 'sent') {
